@@ -30,7 +30,7 @@ public class CameraMovement : MonoBehaviour {
 		var x = transform.position.x;
 		var y = transform.position.y;
 
-		cam.orthographicSize = (Screen.height / 100f) / 4f;
+		cam.orthographicSize = (Screen.height / 100f) / 6f;
 
 		if (Target) {
 			//transform.position = Vector3.Lerp(transform.position, Target.position, m_speed)+new Vector3(0,0,-10);
