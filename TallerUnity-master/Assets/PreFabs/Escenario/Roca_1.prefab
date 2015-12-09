@@ -9,7 +9,14 @@ GameObject:
   m_Component:
   - 4: {fileID: 468004}
   - 212: {fileID: 21236198}
-  - 61: {fileID: 6162868}
+  - 58: {fileID: 5873364}
+  - 58: {fileID: 5849104}
+  - 58: {fileID: 5832222}
+  - 58: {fileID: 5818124}
+  - 58: {fileID: 5851092}
+  - 58: {fileID: 5881092}
+  - 58: {fileID: 5868224}
+  - 58: {fileID: 5865070}
   - 114: {fileID: 11482568}
   m_Layer: 14
   m_Name: Roca_1
@@ -25,13 +32,13 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 170556}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .989790082, y: 1.47373569, z: 0}
+  m_LocalPosition: {x: 2.09322119, y: 2.64634085, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!61 &6162868
-BoxCollider2D:
+--- !u!58 &5818124
+CircleCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -40,9 +47,100 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: -.0900000036}
+  m_Offset: {x: .0900000036, y: -.140000001}
   serializedVersion: 2
-  m_Size: {x: .349999994, y: .25999999}
+  m_Radius: .0691394806
+--- !u!58 &5832222
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 170556}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.0900000036, y: 0}
+  serializedVersion: 2
+  m_Radius: .0691394806
+--- !u!58 &5849104
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 170556}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: .0900000036, y: 0}
+  serializedVersion: 2
+  m_Radius: .0691394806
+--- !u!58 &5851092
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 170556}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.0900000036, y: -.140000001}
+  serializedVersion: 2
+  m_Radius: .0691394806
+--- !u!58 &5865070
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 170556}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: -.170000002}
+  serializedVersion: 2
+  m_Radius: .038585186
+--- !u!58 &5868224
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 170556}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.119999997, y: -.0700000003}
+  serializedVersion: 2
+  m_Radius: .038585186
+--- !u!58 &5873364
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 170556}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: .0299999993}
+  serializedVersion: 2
+  m_Radius: .038585186
+--- !u!58 &5881092
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 170556}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: .119999997, y: -.0700000003}
+  serializedVersion: 2
+  m_Radius: .038585186
 --- !u!114 &11482568
 MonoBehaviour:
   m_ObjectHideFlags: 1

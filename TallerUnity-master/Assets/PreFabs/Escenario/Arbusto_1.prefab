@@ -9,8 +9,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 473982}
   - 212: {fileID: 21223354}
+  - 58: {fileID: 5848986}
+  - 58: {fileID: 5835408}
   - 114: {fileID: 11457660}
-  - 61: {fileID: 6123446}
   m_Layer: 14
   m_Name: Arbusto_1
   m_TagString: Untagged
@@ -25,13 +26,13 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 163502}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .280000001, y: 2.40400004, z: 0}
+  m_LocalPosition: {x: 1.69028938, y: 2.7752409, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!61 &6123446
-BoxCollider2D:
+--- !u!58 &5835408
+CircleCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -40,9 +41,22 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: .00999999978, y: -.119999997}
+  m_Offset: {x: .0500000007, y: -.100000001}
   serializedVersion: 2
-  m_Size: {x: .219999999, y: .109999999}
+  m_Radius: .0394163132
+--- !u!58 &5848986
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 163502}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.0299999993, y: -.100000001}
+  serializedVersion: 2
+  m_Radius: .0394163132
 --- !u!114 &11457660
 MonoBehaviour:
   m_ObjectHideFlags: 1
