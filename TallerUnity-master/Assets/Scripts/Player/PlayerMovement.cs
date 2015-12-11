@@ -4,10 +4,10 @@ using System.Collections;
 public class PlayerMovement : MonoBehaviour {
 
     public Animator anim;
-    public Rigidbody2D body;
-    float mouse_X, mouse_Y, player_X, player_Y;
 
-    void FixedUpdate () {
+    public Rigidbody2D body;
+	
+	void FixedUpdate () {
 
         if (body == null)
             body = GetComponent<Rigidbody2D>();
@@ -32,11 +32,11 @@ public class PlayerMovement : MonoBehaviour {
             input_Y = 1;
         }
 
-        mouse_X = Camera.main.ScreenToWorldPoint(Input.mousePosition).x;//coordenada del racton respecto a la camara principal
-        mouse_Y = Camera.main.ScreenToWorldPoint( Input.mousePosition).y;
+        float mouse_X = Camera.main.ScreenToWorldPoint(Input.mousePosition).x;//coordenada del racton respecto a la camara principal
+        float mouse_Y = Camera.main.ScreenToWorldPoint( Input.mousePosition).y;
 
-        player_X = transform.position.x;
-        player_Y = transform.position.y;
+        float player_X = transform.position.x;
+        float player_Y = transform.position.y;
 
         body.MovePosition(body.position + new Vector2(input_X, input_Y) * Time.deltaTime*0.5f);
 
@@ -53,23 +53,4 @@ public class PlayerMovement : MonoBehaviour {
         }
 
 	}
-
-    public float X
-    {
-        get {
-            X = mouse_X - player_X;
-            return X;
-        }
-        set {;}
-    }
-
-    public float Y
-    {
-        get
-        {
-            Y = mouse_Y - player_Y;
-            return Y;
-        }
-        set {;}
-    }
 }
