@@ -9,9 +9,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 445548}
   - 114: {fileID: 11443630}
-  - 114: {fileID: 11454392}
   - 61: {fileID: 6181582}
   - 50: {fileID: 5047964}
+  - 114: {fileID: 11489388}
   m_Layer: 9
   m_Name: Player
   m_TagString: Player
@@ -58,7 +58,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 120268}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.82599998, z: 0}
+  m_LocalPosition: {x: 1.25399995, y: 2.53600001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 466612}
@@ -148,7 +148,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 9583202}
   body: {fileID: 5047964}
---- !u!114 &11454392
+--- !u!114 &11489388
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -156,10 +156,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 120268}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9561daa515d7f514f86d2e903e5ca99b, type: 3}
+  m_Script: {fileID: 11500000, guid: 35d1451286c00ab4f9f5c35854131434, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shield: {fileID: 0}
+  Bala: {fileID: 0}
+  Spawn: {fileID: 0}
 --- !u!212 &21221256
 SpriteRenderer:
   m_ObjectHideFlags: 1
