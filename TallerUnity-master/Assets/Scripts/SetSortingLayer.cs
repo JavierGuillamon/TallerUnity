@@ -5,17 +5,16 @@ public class SetSortingLayer : MonoBehaviour {
     public Transform Target;
     public Transform Reference;
     public SpriteRenderer rend;
+    public int Order;
 	// Update is called once per frame
 	void Update () {
         
 	    if(Target.position.y> Reference.position.y)
-        {
-            rend.sortingLayerName = "Overlay";
-        }
+            rend.sortingLayerName = "Overlay";             
         else
-        {
             rend.sortingLayerName = "Suelo";
-        }
-            
-	}
+
+        rend.sortingOrder = Order;
+
+    }
 }

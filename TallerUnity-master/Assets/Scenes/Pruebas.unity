@@ -1705,11 +1705,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 490136, guid: f35c8cb511de78642beb270a6e37b259, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -.952999949
+      value: -.462000012
       objectReference: {fileID: 0}
     - target: {fileID: 490136, guid: f35c8cb511de78642beb270a6e37b259, type: 2}
       propertyPath: m_LocalPosition.y
-      value: .565999985
+      value: .393000007
       objectReference: {fileID: 0}
     - target: {fileID: 490136, guid: f35c8cb511de78642beb270a6e37b259, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1792,6 +1792,10 @@ Prefab:
     - target: {fileID: 460430, guid: 4d8645fc4de82f147a85880566f41855, type: 2}
       propertyPath: m_RootOrder
       value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 21299060, guid: 4d8645fc4de82f147a85880566f41855, type: 2}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4d8645fc4de82f147a85880566f41855, type: 2}
@@ -2137,6 +2141,10 @@ Prefab:
     - target: {fileID: 159370, guid: f35c8cb511de78642beb270a6e37b259, type: 2}
       propertyPath: m_Name
       value: Roca_2 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 21255978, guid: f35c8cb511de78642beb270a6e37b259, type: 2}
+      propertyPath: m_SortingOrder
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f35c8cb511de78642beb270a6e37b259, type: 2}
