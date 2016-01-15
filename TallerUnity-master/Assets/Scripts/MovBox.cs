@@ -2,43 +2,47 @@
 using System.Collections;
 
 public class MovBox : MonoBehaviour {
-    public Transform Box;
-    public enum direcciónMovimiento {IZQUIERDA,DERECHA,ARRIBA,ABAJO}
-    public direcciónMovimiento direccion;
-    public float mov;
-    private float X, Y;
-
-    void OnTriggerEnter2D(Collider2D otro)
+   
+    public Rigidbody2D Box;
+    public float movUnits;
+    public float movTime;
+    void OnTriggerEnter2D(Collider2D coll)
     {
-        switch (direccion)
-        {
-            case direcciónMovimiento.ABAJO:
-                {                    
-                    Debug.Log("ABAJO"+Box.position+" "+mov);
-                    Box.Translate(new Vector3(0, mov,0));
-                    //Box.position = new Vector3(0, 3, 0).normalized * Time.deltaTime;
-                    Debug.Log("ABAJO2" + Box.position + " " + mov);
-                    break;
-                }
-            case direcciónMovimiento.ARRIBA:
-                { 
-                    Debug.Log("ARRIBA");
-                    Box.position += new Vector3(0, -mov, 0).normalized * Time.deltaTime;
-                    break;
-                }
-            case direcciónMovimiento.IZQUIERDA:
-                {
-                    Debug.Log("IZQUIERDA");
-                    Box.position += new Vector3(mov, 0, 0).normalized * Time.deltaTime;
-                    break;
-                }
-            case direcciónMovimiento.DERECHA:
-                {
-                    Debug.Log("DERECHA");
-                    Box.position += new Vector3(-mov, 0, 0).normalized * Time.deltaTime;
-                    break;
-                }
-                
+        Vector2 a = coll.transform.position;
+        Debug.Log("entro");
+        Vector3 colPos = coll.GetComponent<Rigidbody2D>().transform.position;
+        float X = colPos.x - Box.transform.position.x;
+        float Y = colPos.y - Box.transform.position.y;
+        Debug.Log("X:" + X + " Y:" + Y);       
+        if (Mathf.Abs(X) < Mathf.Abs(Y))
+        {     
+            if (Y >= 0)
+            {
+                StartCoroutine(move(movTime, 0, -movUnits));
+            }
+            else
+            {
+                StartCoroutine(move(movTime, 0, movUnits));
+            }
         }
+        else
+        {   
+            if (X >= 0)
+            {
+                StartCoroutine(move(movTime, -movUnits,0));
+            }
+            else
+            {
+                StartCoroutine(move(movTime, movUnits, 0));
+            }
+        }
+    }
+    IEnumerator move(float time, float X, float Y)
+    {
+        Debug.Log("EMpIEZA");
+        Box.MovePosition(Box.position + new Vector2(X, Y) * Time.deltaTime * 0.5f);
+        yield return new WaitForSeconds(time);
+        Box.MovePosition(Box.position);
+        Debug.Log("ACABA");
     }
 }
