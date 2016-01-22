@@ -22,7 +22,7 @@ TagManager:
   - Scenery
   - TriggerAbility
   - Box
-  - 
+  - EnemyDtct
   - 
   - 
   - 
@@ -40,13 +40,4 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: Suelo
-    uniqueID: 2705994911
-    locked: 0
-  - name: Player
-    uniqueID: 427600149
-    locked: 0
-  - name: Overlay
-    uniqueID: 3562955271
     locked: 0

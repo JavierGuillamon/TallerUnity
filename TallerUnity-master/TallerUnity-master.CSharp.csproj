@@ -75,16 +75,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Bala.cs" />
+    <Compile Include="Assets\Scripts\DynamicDrawingOrder.cs" />
+    <Compile Include="Assets\Scripts\Enemy\Inofensive.cs" />
+    <Compile Include="Assets\Scripts\Enemy\MovEnemy.cs" />
     <Compile Include="Assets\Scripts\MovBox.cs" />
-    <Compile Include="Assets\Scripts\MovEnemy.cs" />
     <Compile Include="Assets\Scripts\Oso\DialogControl.cs" />
     <Compile Include="Assets\Scripts\Oso\OsoMov.cs" />
+    <Compile Include="Assets\Scripts\Pathfinding\Grid.cs" />
+    <Compile Include="Assets\Scripts\Pathfinding\Node.cs" />
+    <Compile Include="Assets\Scripts\Pathfinding\Pathfinding.cs" />
     <Compile Include="Assets\Scripts\Player\CameraMovement.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Player\ShieldControl.cs" />
     <Compile Include="Assets\Scripts\Player\Shoot.cs" />
     <Compile Include="Assets\Scripts\Pointer.cs" />
-    <Compile Include="Assets\Scripts\SetSortingLayer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />

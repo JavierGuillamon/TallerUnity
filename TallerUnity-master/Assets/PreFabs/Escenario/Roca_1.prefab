@@ -32,7 +32,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 170556}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.09322119, y: 2.64634085, z: 0}
+  m_LocalPosition: {x: .540000021, y: -.660000026, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -155,6 +155,7 @@ MonoBehaviour:
   Target: {fileID: 0}
   Reference: {fileID: 468004}
   rend: {fileID: 21236198}
+  Order: 4
 --- !u!212 &21236198
 SpriteRenderer:
   m_ObjectHideFlags: 1

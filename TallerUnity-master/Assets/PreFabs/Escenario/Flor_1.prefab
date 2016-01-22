@@ -9,7 +9,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 405730}
   - 212: {fileID: 21281052}
-  - 114: {fileID: 11403978}
+  - 114: {fileID: 11471852}
   m_Layer: 14
   m_Name: Flor_1
   m_TagString: Untagged
@@ -24,12 +24,12 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 161422}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .534476995, y: .908715189, z: 0}
+  m_LocalPosition: {x: -.933567047, y: .264606476, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!114 &11403978
+--- !u!114 &11471852
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -37,12 +37,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 161422}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 642f430a1d00b3e47af7783b7eae5475, type: 3}
+  m_Script: {fileID: 11500000, guid: 414962e0fc6330040a5b5ce96460609e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Target: {fileID: 0}
-  Reference: {fileID: 405730}
-  rend: {fileID: 21281052}
+  sprite: {fileID: 0}
+  offset: 0
 --- !u!212 &21281052
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -65,7 +64,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1588972385
+  m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300026, guid: db8edfcf546cbc3459fcada767698812, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

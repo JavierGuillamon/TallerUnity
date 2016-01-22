@@ -23,7 +23,7 @@ public class PlayerMovement : MonoBehaviour {
         player_X = transform.position.x;
         player_Y = transform.position.y;
 
-        body.MovePosition(body.position + new Vector2(input_X, input_Y).normalized * speed * Time.deltaTime*0.5f);
+        body.MovePosition(body.position + new Vector2(input_X, input_Y).normalized * speed * Time.deltaTime);
 
         bool isWalking = (Mathf.Abs (input_X) + Mathf.Abs (input_Y)) > 0; 
 		anim.SetBool ("isWalking", isWalking);
