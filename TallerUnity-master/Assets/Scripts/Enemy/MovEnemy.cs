@@ -9,8 +9,8 @@ public class MovEnemy : MonoBehaviour {
     public float speed = 1;
     float RandX, RandY;
     bool mov = false;
-     float scaleRangeMin = 0.8f;
-     float scaleRangeMax = 1.2f;
+    float scaleRangeMin = 0.8f;
+    float scaleRangeMax = 1.2f;
 
     void Start()
     {
@@ -38,7 +38,7 @@ public class MovEnemy : MonoBehaviour {
         body.MovePosition(body.position + new Vector2(RandX, RandY).normalized * speed * Time.deltaTime);
         anim.SetFloat("x", RandX);
         yield return new WaitForSeconds(x);
-        Debug.Log("ACAbado");
+        //Debug.Log("ACAbado");
         mov = false;
     }
 

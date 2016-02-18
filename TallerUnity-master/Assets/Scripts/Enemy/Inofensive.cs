@@ -4,18 +4,39 @@ using System.Collections;
 public class Inofensive : MonoBehaviour {
 
     public int Lives;
+    public Animator anim;
     public GameObject go;
-	// Update is called once per frame
-	void Update () {
+    public float tiempoAnimDaño;
+    public float tiempoAnimMorir;
+    // Update is called once per frame
+    void Update () {
 	
 	}
 
+    //NO TENGO TIEMPO PARA CAMBIARLO AHORA
+    //CAMBIAR PARA QUE SOLO DETECTE ATAQUES
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (Lives != 1)
-            Lives--;
-        else
-            Destroy(go);
-        
+        if (other.tag == "Bala")
+        {
+            StartCoroutine(recibirDaño(tiempoAnimDaño));
+            if (Lives != 1)
+                Lives--;
+            else
+                StartCoroutine(morir(tiempoAnimDaño));           
+            
+        }
+    }
+    IEnumerator recibirDaño(float x)
+    {
+        anim.SetBool("damage", true);
+        yield return new WaitForSeconds(x);
+        anim.SetBool("damage", false);
+    }
+    IEnumerator morir(float x)
+    {
+        anim.SetBool("damage", true);
+        yield return new WaitForSeconds(x);
+        Destroy(go);
     }
 }
