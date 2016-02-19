@@ -12,9 +12,7 @@ public class Inofensive : MonoBehaviour {
     void Update () {
 	
 	}
-
-    //NO TENGO TIEMPO PARA CAMBIARLO AHORA
-    //CAMBIAR PARA QUE SOLO DETECTE ATAQUES
+    
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Bala")

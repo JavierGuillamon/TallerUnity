@@ -76,6 +76,9 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Bala.cs" />
     <Compile Include="Assets\Scripts\DynamicDrawingOrder.cs" />
+    <Compile Include="Assets\Scripts\Enemy\Boss\Boss.cs" />
+    <Compile Include="Assets\Scripts\Enemy\Boss\Projectile.cs" />
+    <Compile Include="Assets\Scripts\Enemy\Boss\ShootControl.cs" />
     <Compile Include="Assets\Scripts\Enemy\Inofensive.cs" />
     <Compile Include="Assets\Scripts\Enemy\MovEnemy.cs" />
     <Compile Include="Assets\Scripts\MovBox.cs" />
