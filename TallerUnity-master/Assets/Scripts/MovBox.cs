@@ -9,11 +9,9 @@ public class MovBox : MonoBehaviour {
     void OnTriggerEnter2D(Collider2D coll)
     {
         Vector2 a = coll.transform.position;
-        Debug.Log("entro");
         Vector3 colPos = coll.GetComponent<Rigidbody2D>().transform.position;
         float X = colPos.x - Box.transform.position.x;
-        float Y = colPos.y - Box.transform.position.y;
-        Debug.Log("X:" + X + " Y:" + Y);       
+        float Y = colPos.y - Box.transform.position.y;     
         if (Mathf.Abs(X) < Mathf.Abs(Y))
         {     
             if (Y >= 0)

@@ -4,7 +4,7 @@ using System.Collections;
 public class CameraMovement : MonoBehaviour {
 
 	public Transform Target;
-
+    public float sizeCamera;
 	//public Vector2 Margin;
 	public BoxCollider2D Bounds;
 
@@ -30,7 +30,7 @@ public class CameraMovement : MonoBehaviour {
 		var x = transform.position.x;
 		var y = transform.position.y;
 
-		cam.orthographicSize = (Screen.height / 100f) / 6f;
+		cam.orthographicSize = (Screen.height / 100f) / sizeCamera;
 
 		if (Target) {
 			//transform.position = Vector3.Lerp(transform.position, Target.position, m_speed)+new Vector3(0,0,-10);

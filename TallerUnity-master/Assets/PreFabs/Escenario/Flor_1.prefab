@@ -41,7 +41,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprite: {fileID: 0}
-  offset: 0
+  offset: 210
 --- !u!212 &21281052
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -78,6 +78,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: Target
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: offset
+      value: 210
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
