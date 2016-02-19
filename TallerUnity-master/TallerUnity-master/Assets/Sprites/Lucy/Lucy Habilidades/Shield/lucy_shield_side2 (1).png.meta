@@ -1,0 +1,111 @@
+fileFormatVersion: 2
+guid: 9227e67ea825fb94b91f99b5809b83fe
+timeCreated: 1452871089
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: lucy_shield_side2 (1)_4
+    21300002: lucy_shield_side2 (1)_3
+    21300004: lucy_shield_side2 (1)_2
+    21300006: lucy_shield_side2 (1)_1
+    21300008: lucy_shield_side2 (1)_0
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: lucy_shield_side2 (1)_4
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 7
+        width: 41
+        height: 27
+      alignment: 9
+      pivot: {x: 1, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: lucy_shield_side2 (1)_3
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 7
+        width: 41
+        height: 27
+      alignment: 9
+      pivot: {x: 1, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: lucy_shield_side2 (1)_2
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 7
+        width: 41
+        height: 27
+      alignment: 9
+      pivot: {x: 1, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: lucy_shield_side2 (1)_1
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 7
+        width: 41
+        height: 27
+      alignment: 9
+      pivot: {x: 1, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: lucy_shield_side2 (1)_0
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 7
+        width: 41
+        height: 27
+      alignment: 9
+      pivot: {x: 1, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

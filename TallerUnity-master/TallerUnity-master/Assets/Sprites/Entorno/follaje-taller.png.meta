@@ -1,0 +1,259 @@
+fileFormatVersion: 2
+guid: db8edfcf546cbc3459fcada767698812
+timeCreated: 1449845972
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: follaje-taller_0
+    21300002: follaje-taller_1
+    21300004: follaje-taller_2
+    21300006: follaje-taller_3
+    21300008: follaje-taller_4
+    21300010: follaje-taller_5
+    21300012: follaje-taller_6
+    21300014: follaje-taller_7
+    21300016: follaje-taller_8
+    21300018: follaje-taller_9
+    21300020: follaje-taller_10
+    21300022: follaje-taller_11
+    21300024: follaje-taller_12
+    21300026: follaje-taller_13
+    21300028: follaje-taller_14
+    21300030: follaje-taller_15
+    21300032: follaje-taller_16
+    21300034: follaje-taller_17
+    21300036: follaje-taller_18
+    21300038: follaje-taller_19
+    21300040: follaje-taller_20
+    21300042: follaje-taller_21
+    21300044: follaje-taller_22
+    21300046: follaje-taller_23
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: follaje-taller_0
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 396
+        width: 128
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: follaje-taller_1
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 476
+        width: 35
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: follaje-taller_2
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 476
+        width: 35
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: follaje-taller_3
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 476
+        width: 37
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: follaje-taller_4
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 462
+        width: 102
+        height: 102
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: follaje-taller_5
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 440
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: follaje-taller_6
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 440
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: follaje-taller_7
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 441
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: follaje-taller_8
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 432
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: follaje-taller_9
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 415
+        width: 22
+        height: 10
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: follaje-taller_10
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 416
+        width: 11
+        height: 8
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: follaje-taller_11
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 417
+        width: 8
+        height: 6
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: follaje-taller_12
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 379
+        width: 15
+        height: 29
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: follaje-taller_13
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 379
+        width: 17
+        height: 33
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: follaje-taller_14
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 380
+        width: 7
+        height: 28
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: follaje-taller_15
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 381
+        width: 6
+        height: 27
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: follaje-taller_16
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 380
+        width: 93
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: follaje-taller_17
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 419
+        width: 128
+        height: 165
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
