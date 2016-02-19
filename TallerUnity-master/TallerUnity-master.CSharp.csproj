@@ -63,6 +63,18 @@
     <Reference Include="UnityEngine.Analytics">
       <HintPath>Library\UnityAssemblies\UnityEngine.Analytics.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.Advertisements">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Advertisements.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Analytics">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
@@ -82,10 +94,6 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Bala.cs" />
     <Compile Include="Assets\Scripts\DynamicDrawingOrder.cs" />
-    <Compile Include="Assets\Scripts\Enemy\Boss.cs" />
-    <Compile Include="Assets\Scripts\Enemy\Boss\NewBehaviourScript.cs" />
-    <Compile Include="Assets\Scripts\Enemy\Boss\Proyectile.cs" />
-    <Compile Include="Assets\Scripts\Enemy\Boss\Shoot.cs" />
     <Compile Include="Assets\Scripts\Enemy\Inofensive.cs" />
     <Compile Include="Assets\Scripts\Enemy\MovEnemy.cs" />
     <Compile Include="Assets\Scripts\MovBox.cs" />
@@ -99,7 +107,6 @@
     <Compile Include="Assets\Scripts\Player\ShieldControl.cs" />
     <Compile Include="Assets\Scripts\Player\Shoot.cs" />
     <Compile Include="Assets\Scripts\Pointer.cs" />
-    <Compile Include="Assets\Scripts\PruebaMatar.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
