@@ -1,0 +1,10 @@
+Hola
+Linea 2
+linea 3
+prueba
+
+
+asdf
+dudud
+Vamos a probar con una linea mas larga pues no se como va a funcionar si nos dedicamos a meter un dialogo extremadamente largo sin meter saltos de lineas no se si me estoy explicando bien, bueno creo que ya es momento de parar
+aaa

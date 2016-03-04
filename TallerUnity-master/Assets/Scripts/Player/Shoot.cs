@@ -3,7 +3,6 @@ using System.Collections;
 
 public class Shoot : MonoBehaviour
 {
-    private float CdInSeconds = 1f;
     private float timeStamp;
     public GameObject BalaGo;
     public GameObject FuerzaGo;
@@ -12,6 +11,7 @@ public class Shoot : MonoBehaviour
     private Bala bala;
     private float Xaux, Yaux;
     private Animator anim;
+    public float CdInSeconds = 1f;
     public float velocidadBala;
     // Use this for initialization
     void Start()
