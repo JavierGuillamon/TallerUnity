@@ -33,7 +33,7 @@ public class Inofensive : MonoBehaviour {
     }
     IEnumerator morir(float x)
     {
-        anim.SetBool("damage", true);
+        anim.SetBool("dead", true);
         yield return new WaitForSeconds(x);
         Destroy(go);
     }

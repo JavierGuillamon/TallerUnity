@@ -2,7 +2,9 @@
 using System.Collections;
 
 public class PlayerMovement : MonoBehaviour {
-    public float vidas;
+    public int vidas;
+
+    public GameObject[] vidasImg;
 
     public Animator anim;
 
@@ -13,13 +15,11 @@ public class PlayerMovement : MonoBehaviour {
     float input_X, input_Y;
     float mouse_X, mouse_Y, player_X, player_Y;
 
-    public bool canMove;
+    public bool canMove = true;
 
     void FixedUpdate () {
         if (canMove)
         {
-
-
             if (body == null)
                 body = GetComponent<Rigidbody2D>();
 
@@ -36,8 +36,6 @@ public class PlayerMovement : MonoBehaviour {
         {
             input_X = 0;
             input_Y = 0;
-            mouse_X = 0;
-            mouse_Y = 0;
             player_X = 0;
             player_Y = 0;
         }
@@ -45,15 +43,18 @@ public class PlayerMovement : MonoBehaviour {
 
         bool isWalking = (Mathf.Abs(input_X) + Mathf.Abs(input_Y)) > 0;
         anim.SetBool("isWalking", isWalking);
-        if (isWalking)
+        if (canMove)
         {
-            anim.SetFloat("x", mouse_X - player_X);
-            anim.SetFloat("y", mouse_Y - player_Y);
-        }
-        else
-        {
-            anim.SetFloat("x", mouse_X - player_X);
-            anim.SetFloat("y", mouse_Y - player_Y);
+            if (isWalking)
+            {
+                anim.SetFloat("x", mouse_X - player_X);
+                anim.SetFloat("y", mouse_Y - player_Y);
+            }
+            else
+            {
+                anim.SetFloat("x", mouse_X - player_X);
+                anim.SetFloat("y", mouse_Y - player_Y);
+            }
         }
         
 	}
@@ -67,19 +68,23 @@ public class PlayerMovement : MonoBehaviour {
     }
     public void ShieldOn(float x, float y)
     {
+        canMove = false;
         anim.SetFloat("x", x);
         anim.SetFloat("y", y);
         anim.SetBool("Shield", true);
     }
     public void ShieldOff()
     {
+        canMove = true;
         anim.SetBool("Shield", false);
     }
     public void recibirDaño()
     {  
         anim.SetBool("damage", true);
-        vidas-=1;
-        Debug.Log("bool "+anim.GetBool("damage") );
+       
+        vidas -= 1;
+        vidasImg[(vidas)].SetActive(false);
+       
         if (vidas == 0)
         {
             anim.SetBool("dead", true);
