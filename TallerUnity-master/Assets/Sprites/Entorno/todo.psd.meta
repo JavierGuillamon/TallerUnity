@@ -1,0 +1,518 @@
+fileFormatVersion: 2
+guid: 43632562f64c0ac47bfa3d82a8f4ef21
+timeCreated: 1459518349
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: todo_0
+    21300002: todo_1
+    21300004: todo_2
+    21300006: todo_3
+    21300008: todo_4
+    21300010: todo_5
+    21300012: todo_6
+    21300014: todo_7
+    21300016: todo_8
+    21300018: todo_9
+    21300020: todo_10
+    21300022: todo_11
+    21300024: todo_12
+    21300026: todo_15
+    21300028: todo_16
+    21300030: todo_17
+    21300032: todo_18
+    21300034: todo_19
+    21300036: todo_20
+    21300038: todo_21
+    21300040: todo_22
+    21300042: todo_23
+    21300044: todo_24
+    21300046: todo_25
+    21300048: todo_26
+    21300050: todo_27
+    21300052: todo_28
+    21300054: todo_29
+    21300056: todo_30
+    21300058: todo_31
+    21300060: todo_32
+    21300062: todo_33
+    21300064: todo_34
+    21300066: todo_35
+    21300068: todo_36
+    21300070: todo_37
+    21300072: todo_38
+    21300074: todo_39
+    21300076: todo_40
+    21300078: todo_41
+    21300080: todo_42
+    21300082: todo_43
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: todo_0
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 454
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: todo_1
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 454
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: todo_2
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 454
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: todo_3
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 454
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: todo_4
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 454
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: todo_5
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 454
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: todo_6
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 454
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: todo_7
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 454
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: todo_8
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 454
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: todo_9
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 454
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: todo_10
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 454
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: todo_11
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 454
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: todo_12
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 454
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: todo_15
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 421
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: todo_16
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 421
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: todo_17
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 421
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: todo_18
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 421
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: todo_19
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 421
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: todo_20
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 421
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: todo_21
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 421
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: todo_22
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 421
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: todo_23
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 421
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: todo_24
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 421
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: todo_25
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 378
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: todo_26
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 378
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: todo_27
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 378
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: todo_28
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 378
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: todo_29
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 378
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: todo_30
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 336
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: todo_31
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 336
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: todo_32
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 336
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: todo_33
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 336
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: todo_34
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 336
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: todo_35
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 294
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: todo_36
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 294
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: todo_37
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 294
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: todo_38
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 294
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: todo_39
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 311
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: todo_40
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 311
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: todo_41
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 252
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: todo_42
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 252
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: todo_43
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 252
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

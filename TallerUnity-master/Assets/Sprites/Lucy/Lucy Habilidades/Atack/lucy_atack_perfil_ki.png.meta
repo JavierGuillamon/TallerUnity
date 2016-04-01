@@ -1,0 +1,133 @@
+fileFormatVersion: 2
+guid: 11a5510d4a7f0fd4b826d48d8db3d718
+timeCreated: 1459334842
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: lucy_atack_perfil_ki_0
+    21300002: lucy_atack_perfil_ki_1
+    21300004: lucy_atack_perfil_ki_2
+    21300006: lucy_atack_perfil_ki_3
+    21300008: lucy_atack_perfil_ki_4
+    21300010: lucy_atack_perfil_ki_5
+    21300012: lucy_atack_perfil_ki_6
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: lucy_atack_perfil_ki_0
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 30
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: lucy_atack_perfil_ki_1
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 30
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: lucy_atack_perfil_ki_2
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 30
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: lucy_atack_perfil_ki_3
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 30
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: lucy_atack_perfil_ki_4
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 30
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: lucy_atack_perfil_ki_5
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 6
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: lucy_atack_perfil_ki_6
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 6
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

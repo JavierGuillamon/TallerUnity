@@ -37,10 +37,8 @@ public class MovBox : MonoBehaviour {
     }
     IEnumerator move(float time, float X, float Y)
     {
-        Debug.Log("EMpIEZA");
         Box.MovePosition(Box.position + new Vector2(X, Y) * Time.deltaTime * 0.5f);
         yield return new WaitForSeconds(time);
         Box.MovePosition(Box.position);
-        Debug.Log("ACABA");
     }
 }

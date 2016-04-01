@@ -4,11 +4,11 @@ using System.Collections;
 public class HealthControl : MonoBehaviour {
 
     public Animator anim;
-    public PlayerMovement player;
+    public PlayerControl player;
 
     // Use this for initialization
     void Start () {
-        player = FindObjectOfType<PlayerMovement>();
+        player = FindObjectOfType<PlayerControl>();
 
     }
 	// Update is called once per frame

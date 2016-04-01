@@ -7,7 +7,7 @@ public class Shoot : MonoBehaviour
     public GameObject BalaGo;
     public GameObject FuerzaGo;
     public Transform Spawn;
-    private PlayerMovement pm;
+    private PlayerControl pm;
     private Bala bala;
     private float Xaux, Yaux;
     private Animator anim;
@@ -16,7 +16,7 @@ public class Shoot : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        pm = GetComponent<PlayerMovement>();
+        pm = GetComponent<PlayerControl>();
     }
 
     // Update is called once per frame

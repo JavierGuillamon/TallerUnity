@@ -14,7 +14,7 @@ public class TextBoxManager : MonoBehaviour {
     public int currentLine;
     public int endAtLine;
 
-    public PlayerMovement player;
+    public PlayerControl player;
 
     public bool isActive;
 
@@ -28,7 +28,7 @@ public class TextBoxManager : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
-        player = FindObjectOfType<PlayerMovement>();
+        player = FindObjectOfType<PlayerControl>();
 
         if (textfile != null)
         {
