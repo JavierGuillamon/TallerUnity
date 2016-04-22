@@ -36,7 +36,7 @@ public class MovEnemy : MonoBehaviour {
         RandY = Random.Range(-1f, 1f);
        // Debug.Log("X" + RandX + " Y" + RandY);
         body.MovePosition(body.position + new Vector2(RandX, RandY).normalized * speed * Time.deltaTime);
-        anim.SetFloat("x", RandX);
+      //  anim.SetFloat("x", RandX);
         yield return new WaitForSeconds(x);
         //Debug.Log("ACAbado");
         mov = false;

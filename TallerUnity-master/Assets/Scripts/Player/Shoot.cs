@@ -49,10 +49,6 @@ public class Shoot : MonoBehaviour
                 timeStamp = Time.time + CdInSeconds;
                 StartCoroutine(WaitShoot2(.5f, 0.1f));
             }
-            else
-            {
-                float left = timeStamp - Time.time;
-            }
         }
     }
     void detectPosition(float X, float Y, GameObject go)

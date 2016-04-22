@@ -9,7 +9,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 411716}
   - 212: {fileID: 21270816}
-  - 114: {fileID: 11477750}
   - 58: {fileID: 5899274}
   - 114: {fileID: 11447362}
   m_Layer: 14
@@ -57,17 +56,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 0}
   offset: 0
---- !u!114 &11477750
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 137336}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &21270816
 SpriteRenderer:
   m_ObjectHideFlags: 1

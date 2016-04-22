@@ -3,7 +3,7 @@ using System.Collections;
 
 public class HealthControl : MonoBehaviour {
 
-    public Animator anim;
+  //  public Animator anim;
     public PlayerControl player;
 
     // Use this for initialization
@@ -15,17 +15,23 @@ public class HealthControl : MonoBehaviour {
 	void Update () {
 	
 	}
-    void OnTriggerEnter2D(Collider2D other)
+    void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.name == "Player")
-        {
-            StartCoroutine(Wait(1));
+        if (other.gameObject.name == "Player")
+       {
+
+            player.recibirDaño();
+            //StartCoroutine(Wait(0));
         }
     }
-    IEnumerator Wait(int x)
+    /*IEnumerator Wait(float x)
     {
+        Debug.Log("DAÑO1");
         player.recibirDaño();
+        Debug.Log("DAÑO2");
         yield return new WaitForSeconds(x);
+        Debug.Log("DAÑO3");
         player.recibirDañoOff();
-    }
+        Debug.Log("DAÑO4");
+    }*/
 }

@@ -16,7 +16,7 @@ public class PlayerControl : MonoBehaviour {
     float mouse_X, mouse_Y, player_X, player_Y;
 
     public bool canMove = true;
-
+    public float tiempoAnimDaño=0.5f;
     void FixedUpdate () {
         if (canMove)
         {
@@ -81,8 +81,6 @@ public class PlayerControl : MonoBehaviour {
     public void recibirDaño()
     {  
         anim.SetBool("damage", true);
-        body.MovePosition(body.position + new Vector2(10, 10).normalized * speed * Time.deltaTime);
-        // StartCoroutine(movBack());
         vidas -= 1;
         vidasImg[(vidas)].SetActive(false);
         if (vidas == 0)
@@ -90,18 +88,15 @@ public class PlayerControl : MonoBehaviour {
             anim.SetBool("dead", true);
             canMove = false;
         }
+        StartCoroutine(Wait(tiempoAnimDaño));
     }
     public void recibirDañoOff()
     {
         anim.SetBool("damage", false);
     }
-
-    /*SIn acabar movimiento atras cuando te golpean
-    IEnumerator move(float time, float X, float Y)
+    IEnumerator Wait(float x)
     {
-        body.MovePosition(body.position + new Vector2(X, Y) * Time.deltaTime * 0.5f);
-        yield return new WaitForSeconds(time);
-        body.MovePosition(body.position);
+        yield return new WaitForSeconds(x);
+        recibirDañoOff();
     }
-    */
 }
