@@ -16,6 +16,7 @@ public class PlayerControl : MonoBehaviour {
     float mouse_X, mouse_Y, player_X, player_Y;
 
     public bool canMove = true;
+
     public float tiempoAnimDaño=0.5f;
     void FixedUpdate () {
         if (canMove)
@@ -31,15 +32,7 @@ public class PlayerControl : MonoBehaviour {
 
             player_X = transform.position.x;
             player_Y = transform.position.y;
-        }
-        else
-        {
-            input_X = 0;
-            input_Y = 0;
-            player_X = 0;
-            player_Y = 0;
-        }
-        body.MovePosition(body.position + new Vector2(input_X, input_Y).normalized * speed * Time.deltaTime);
+       
 
         bool isWalking = (Mathf.Abs(input_X) + Mathf.Abs(input_Y)) > 0;
         anim.SetBool("isWalking", isWalking);
@@ -56,8 +49,16 @@ public class PlayerControl : MonoBehaviour {
                 anim.SetFloat("y", mouse_Y - player_Y);
             }
         }
-        
-	}
+        }
+        else
+        {
+            input_X = 0;
+            input_Y = 0;
+            player_X = 0;
+            player_Y = 0;
+        }
+        body.MovePosition(body.position + new Vector2(input_X, input_Y).normalized * speed * Time.deltaTime);
+    }
     public float getX()
     {
         return mouse_X-player_X;

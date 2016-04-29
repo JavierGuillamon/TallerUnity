@@ -8,13 +8,14 @@ public class moveEnemyMelee : MonoBehaviour {
     public Rigidbody2D body;
     public float speed = 1;
     bool mov = false;
-    float scaleRangeMin = 0.8f;
-    float scaleRangeMax = 1.2f;
+    public float scaleRangeMin = 0.8f;
+    public float scaleRangeMax = 1.2f;
 
+    float scale;
     void Start()
     {
         tr = GetComponent<Transform>();
-        float scale = Random.Range(scaleRangeMin, scaleRangeMax);
+        scale = Random.Range(scaleRangeMin, scaleRangeMax);
         tr.localScale *= scale;
         speed *= scale;
         anim.speed *= scale;
@@ -24,18 +25,18 @@ public class moveEnemyMelee : MonoBehaviour {
     void Update()
     {
         if (!mov)
-            StartCoroutine(Move(1f));
+            StartCoroutine(Move(scale));
 
     }
     IEnumerator Move(float x)
     {
         mov = true;
-        // Debug.Log("X" + RandX + " Y" + RandY);
-        //body.MovePosition(body.position + new Vector2(RandX, RandY).normalized * speed * Time.deltaTime);
-        //  anim.SetFloat("x", RandX);
-        tr.position = Vector2.MoveTowards(tr.position,target.position,speed*Time.deltaTime);
+        Vector2 direction= target.position-tr.position;
+        direction.Normalize();
+        body.MovePosition(body.position+ direction*speed * Time.deltaTime);
         yield return new WaitForSeconds(x);
-        //Debug.Log("ACAbado");
+        body.velocity = Vector2.zero;
+        yield return new WaitForSeconds(x);
         mov = false;
     }
 

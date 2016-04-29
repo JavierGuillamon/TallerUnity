@@ -1,15 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Inofensive : MonoBehaviour {
+public class ofensivo : MonoBehaviour {
 
     public int Lives;
     public Animator anim;
     public GameObject go;
     public float tiempoAnimDaño;
     public float tiempoAnimMorir;
-    
-    
+
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Bala")
@@ -18,19 +17,19 @@ public class Inofensive : MonoBehaviour {
             if (Lives != 1)
                 Lives--;
             else
-                StartCoroutine(morir(tiempoAnimDaño));           
-            
+                StartCoroutine(morir(tiempoAnimDaño));
+
         }
     }
     IEnumerator recibirDaño(float x)
     {
-        anim.SetBool("damage", true);
+        //anim.SetBool("damage", true);
         yield return new WaitForSeconds(x);
-        anim.SetBool("damage", false);
+        //anim.SetBool("damage", false);
     }
     IEnumerator morir(float x)
     {
-        anim.SetBool("dead", true);
+      //  anim.SetBool("dead", true);
         yield return new WaitForSeconds(x);
         Destroy(go);
     }

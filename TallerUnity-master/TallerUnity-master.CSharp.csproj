@@ -13,11 +13,13 @@
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile></CompilerResponseFile>
+    <CompilerResponseFile>
+    </CompilerResponseFile>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>Android:13</UnityBuildTarget>
     <UnityVersion>5.2.1f1</UnityVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -77,8 +79,11 @@
     <Compile Include="Assets\Scripts\Enemy\MovEnemy.cs" />
     <Compile Include="Assets\Scripts\Enemy\ofensivoDistancia\EnemyBullet.cs" />
     <Compile Include="Assets\Scripts\Enemy\ofensivoDistancia\EnemyShoot.cs" />
+    <Compile Include="Assets\Scripts\Enemy\ofensivoDistancia\ofensivo.cs" />
     <Compile Include="Assets\Scripts\Enemy\ofensivoMelee\moveEnemyMelee.cs" />
     <Compile Include="Assets\Scripts\Escenario\EntrarSala.cs" />
+    <Compile Include="Assets\Scripts\Menu\CargarEscena.cs" />
+    <Compile Include="Assets\Scripts\Menu\DoorDetect.cs" />
     <Compile Include="Assets\Scripts\MovBox.cs" />
     <Compile Include="Assets\Scripts\Oso\DialogControl.cs" />
     <Compile Include="Assets\Scripts\Oso\OsoMov.cs" />

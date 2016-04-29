@@ -26,28 +26,31 @@ public class Shoot : MonoBehaviour
     }
     void fire()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (pm.canMove)
         {
-            detectPosition(pm.getX(), pm.getY(), BalaGo);
-            if (timeStamp <= Time.time)
+            if (Input.GetButtonDown("Fire1"))
             {
-                pm.ShieldOn(Xaux,Yaux);      
-                timeStamp = Time.time + CdInSeconds;
-                StartCoroutine(WaitShoot1(.5f, 0.1f));
+                detectPosition(pm.getX(), pm.getY(), BalaGo);
+                if (timeStamp <= Time.time)
+                {
+                    pm.ShieldOn(Xaux, Yaux);
+                    timeStamp = Time.time + CdInSeconds;
+                    StartCoroutine(WaitShoot1(.5f, 0.1f));
+                }
+                else
+                {
+                    float left = timeStamp - Time.time;
+                }
             }
-            else
+            if (Input.GetButtonDown("Fire2"))
             {
-                float left = timeStamp - Time.time;
-            }
-        }
-        if (Input.GetButtonDown("Fire2"))
-        {
-            detectPosition(pm.getX(), pm.getY(), FuerzaGo);
-            if (timeStamp <= Time.time)
-            {
-                pm.ShieldOn(Xaux, Yaux);
-                timeStamp = Time.time + CdInSeconds;
-                StartCoroutine(WaitShoot2(.5f, 0.1f));
+                detectPosition(pm.getX(), pm.getY(), FuerzaGo);
+                if (timeStamp <= Time.time)
+                {
+                    pm.ShieldOn(Xaux, Yaux);
+                    timeStamp = Time.time + CdInSeconds;
+                    StartCoroutine(WaitShoot2(.5f, 0.1f));
+                }
             }
         }
     }
