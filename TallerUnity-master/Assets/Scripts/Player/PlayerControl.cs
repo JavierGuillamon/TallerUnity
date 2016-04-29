@@ -18,6 +18,12 @@ public class PlayerControl : MonoBehaviour {
     public bool canMove = true;
 
     public float tiempoAnimDaño=0.5f;
+
+    public Canvas canvasMenu;
+    void Start()
+    {
+        canvasMenu.enabled = false;
+    }
     void FixedUpdate () {
         if (canMove)
         {
@@ -99,5 +105,16 @@ public class PlayerControl : MonoBehaviour {
     {
         yield return new WaitForSeconds(x);
         recibirDañoOff();
+    }
+
+    public void PauseMenuOn()
+    {
+        canvasMenu.enabled = true;
+        Time.timeScale = 0;
+    }
+    public void PauseMenuOFF()
+    {
+        canvasMenu.enabled = false;
+        Time.timeScale = 1;
     }
 }

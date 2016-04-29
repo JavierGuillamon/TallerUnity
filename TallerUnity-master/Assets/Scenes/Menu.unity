@@ -1731,7 +1731,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 4, y: 3}
+  m_Size: {x: 3.5, y: 3}
 --- !u!4 &415176052 stripped
 Transform:
   m_PrefabParentObject: {fileID: 445262, guid: 30169f1925d762d4ba079e6d8999a8dd, type: 2}
@@ -3000,8 +3000,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 774897114}
   - 33: {fileID: 774897113}
-  - 65: {fileID: 774897112}
   - 23: {fileID: 774897111}
+  - 114: {fileID: 774897116}
+  - 114: {fileID: 774897115}
+  - 61: {fileID: 774897112}
   m_Layer: 0
   m_Name: EntradaMenu2
   m_TagString: Untagged
@@ -3033,18 +3035,19 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
---- !u!65 &774897112
-BoxCollider:
+--- !u!61 &774897112
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 774897110}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
   m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 1}
 --- !u!33 &774897113
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -3064,6 +3067,33 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
+--- !u!114 &774897115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 774897110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a142020bf3bed9e48b4d3b3debd4a1e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ce: {fileID: 774897116}
+  NumeroEscena: -1
+--- !u!114 &774897116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 774897110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65fb58bf0f195bb4db16a6305ec0c670, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LoadImage: {fileID: 0}
+  cerrar: 0
+  can: {fileID: 0}
 --- !u!1001 &776183688
 Prefab:
   m_ObjectHideFlags: 0
@@ -5689,6 +5719,8 @@ GameObject:
   - 33: {fileID: 1475424622}
   - 23: {fileID: 1475424620}
   - 61: {fileID: 1475424621}
+  - 114: {fileID: 1475424624}
+  - 114: {fileID: 1475424625}
   m_Layer: 0
   m_Name: EntradaMenu1
   m_TagString: Untagged
@@ -5752,6 +5784,33 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
+--- !u!114 &1475424624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1475424619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a142020bf3bed9e48b4d3b3debd4a1e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ce: {fileID: 1475424625}
+  NumeroEscena: 1
+--- !u!114 &1475424625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1475424619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65fb58bf0f195bb4db16a6305ec0c670, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LoadImage: {fileID: 226390875}
+  cerrar: 0
+  can: {fileID: 0}
 --- !u!4 &1477270390 stripped
 Transform:
   m_PrefabParentObject: {fileID: 445262, guid: 30169f1925d762d4ba079e6d8999a8dd, type: 2}

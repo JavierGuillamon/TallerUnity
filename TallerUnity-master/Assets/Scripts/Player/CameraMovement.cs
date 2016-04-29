@@ -27,17 +27,17 @@ public class CameraMovement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		var x = transform.position.x;
-		var y = transform.position.y;
+		float x = transform.position.x;
+		float y = transform.position.y;
 
-		cam.orthographicSize = (Screen.height / 100f) / sizeCamera;
+		cam.orthographicSize = Mathf.Min(((float)Screen.height / 100f) / sizeCamera, (Bounds.bounds.max - Bounds.bounds.min).y/2);
 
-		if (Target) {
-			//transform.position = Vector3.Lerp(transform.position, Target.position, m_speed)+new Vector3(0,0,-10);
-			x = Mathf.Lerp (x,Target.position.x,m_speed);
+        if (Target) {
+            //transform.position = Vector3.Lerp(transform.position, Target.position, m_speed)+new Vector3(0,0,-10);
+            x = Mathf.Lerp (x,Target.position.x,m_speed);
 			y = Mathf.Lerp(y,Target.position.y,m_speed);
-		
-		}
+
+        }
 		/*
 		if (IsFollowing) {
 			if(Mathf.Abs (x - Target.position.x) > Margin.x)
@@ -46,9 +46,9 @@ public class CameraMovement : MonoBehaviour {
 				y = Mathf.Lerp(y,Target.position.y, Smoothing.y * Time.deltaTime);
 		}*/
 
-		var cameraHalfWidth = cam.orthographicSize * ((float)Screen.width / Screen.height);
+		float cameraHalfWidth = Mathf.Min(cam.orthographicSize * ((float)Screen.width / (float)Screen.height), (Bounds.bounds.max - Bounds.bounds.min).y/2);
 
-		x = Mathf.Clamp (x, _min.x + cameraHalfWidth, _max.x - cameraHalfWidth);
+        x = Mathf.Clamp (x, _min.x + cameraHalfWidth, _max.x - cameraHalfWidth);
 		y = Mathf.Clamp (y, _min.y + cam.orthographicSize, _max.y - cam.orthographicSize);
 
 		transform.position = new Vector3 (x, y, transform.position.z);

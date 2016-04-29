@@ -52,6 +52,10 @@ public class Shoot : MonoBehaviour
                     StartCoroutine(WaitShoot2(.5f, 0.1f));
                 }
             }
+            if (Input.GetButtonDown("Pause"))
+            {
+                pm.PauseMenuOn();
+            }
         }
     }
     void detectPosition(float X, float Y, GameObject go)
