@@ -75,6 +75,7 @@
     <Compile Include="Assets\Scripts\Enemy\Boss\ShootControl.cs" />
     <Compile Include="Assets\Scripts\Enemy\Inofensive.cs" />
     <Compile Include="Assets\Scripts\Enemy\MovEnemy.cs" />
+    <Compile Include="Assets\Scripts\Enemy\Spawn.cs" />
     <Compile Include="Assets\Scripts\Enemy\ofensivoDistancia\EnemyBullet.cs" />
     <Compile Include="Assets\Scripts\Enemy\ofensivoDistancia\EnemyShoot.cs" />
     <Compile Include="Assets\Scripts\Enemy\ofensivoDistancia\ofensivo.cs" />

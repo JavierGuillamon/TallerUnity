@@ -46,7 +46,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 129862}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .424673796, y: 4.08990431, z: 0}
+  m_LocalPosition: {x: .065984726, y: 2.90929699, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 451398}
@@ -59,7 +59,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 150126}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -.25, z: 0}
+  m_LocalPosition: {x: 0, y: -.0500000007, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 410624}
@@ -103,7 +103,7 @@ CircleCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: -.25}
+  m_Offset: {x: 0, y: -.0500000007}
   serializedVersion: 2
   m_Radius: .0900000036
 --- !u!95 &9528164
@@ -113,7 +113,7 @@ Animator:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 129862}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 9da9c179d1ab8d446ad2b168592cdf44, type: 2}
   m_CullingMode: 0
@@ -182,6 +182,7 @@ MonoBehaviour:
   go: {fileID: 129862}
   "tiempoAnimDa\xF1o": .5
   tiempoAnimMorir: .200000003
+  sensorEntrada: {fileID: 0}
 --- !u!212 &21202604
 SpriteRenderer:
   m_ObjectHideFlags: 1

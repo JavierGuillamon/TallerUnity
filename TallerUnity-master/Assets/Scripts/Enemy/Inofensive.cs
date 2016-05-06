@@ -8,8 +8,9 @@ public class Inofensive : MonoBehaviour {
     public GameObject go;
     public float tiempoAnimDaño;
     public float tiempoAnimMorir;
-    
-    
+
+    public GameObject sensorEntrada;
+
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Bala")
@@ -30,6 +31,7 @@ public class Inofensive : MonoBehaviour {
     }
     IEnumerator morir(float x)
     {
+        sensorEntrada.GetComponent<Spawn>().deadCount++;
         anim.SetBool("dead", true);
         yield return new WaitForSeconds(x);
         Destroy(go);

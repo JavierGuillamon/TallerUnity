@@ -57,7 +57,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 147226}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.75, z: 0}
+  m_LocalPosition: {x: -.0867788792, y: 3.13392329, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 405254}
@@ -151,6 +151,7 @@ MonoBehaviour:
   go: {fileID: 147226}
   "tiempoAnimDa\xF1o": .5
   tiempoAnimMorir: .200000003
+  sensorEntrada: {fileID: 0}
 --- !u!114 &11467516
 MonoBehaviour:
   m_ObjectHideFlags: 1

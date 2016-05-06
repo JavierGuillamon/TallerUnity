@@ -6,6 +6,9 @@ public class DoorDetect : MonoBehaviour {
     public int NumeroEscena;
 	void OnTriggerEnter2D(Collider2D other)
     {
-        ce.LoadScene(NumeroEscena);
+        if (other.gameObject.name == "Player")
+        {
+            ce.LoadScene(NumeroEscena);
+        }
     }
 }
