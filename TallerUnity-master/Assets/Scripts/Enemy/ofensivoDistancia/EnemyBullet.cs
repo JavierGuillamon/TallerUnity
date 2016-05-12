@@ -8,8 +8,11 @@ public class EnemyBullet : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
-	}
+        if (direction.x ==1) transform.Rotate(0, 0, 0);
+        else if(direction.x==-1) transform.Rotate(0, 0, -180);
+        if (direction.y==1) transform.Rotate(0, 0,90 );
+        else if(direction.y==-1)transform.Rotate(0, 0, -90);
+    }
 	void awake()
     {
         isReady = false;

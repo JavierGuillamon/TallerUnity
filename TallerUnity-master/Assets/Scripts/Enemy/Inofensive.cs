@@ -11,7 +11,24 @@ public class Inofensive : MonoBehaviour {
 
     public GameObject sensorEntrada;
 
+    private AudioSource audioSource;
+    void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
     void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "Bala")
+        {
+            audioSource.Play();
+            StartCoroutine(recibirDaño(tiempoAnimDaño));
+            if (Lives != 1)
+                Lives--;
+            else
+                StartCoroutine(morir(tiempoAnimDaño));                
+        }
+    }
+    void OnTriggerExit2D(Collider2D other)
     {
         if (other.tag == "Bala")
         {
@@ -19,10 +36,10 @@ public class Inofensive : MonoBehaviour {
             if (Lives != 1)
                 Lives--;
             else
-                StartCoroutine(morir(tiempoAnimDaño));           
-            
+                StartCoroutine(morir(tiempoAnimDaño));
         }
     }
+
     IEnumerator recibirDaño(float x)
     {
         anim.SetBool("damage", true);

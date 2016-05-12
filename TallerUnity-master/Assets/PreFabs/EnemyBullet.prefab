@@ -43,9 +43,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 117828}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.10123122, y: 3.24998307, z: 0}
-  m_LocalScale: {x: .0250000004, y: .0250000004, z: .00999999978}
+  m_LocalRotation: {x: 0, y: 0, z: 6.33767343e-07, w: -1}
+  m_LocalPosition: {x: 1.85677326, y: .752164721, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 428514}
   m_Father: {fileID: 0}
@@ -88,9 +88,9 @@ CircleCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: .0199999996, y: 0}
   serializedVersion: 2
-  m_Radius: 2
+  m_Radius: .0500000007
 --- !u!58 &5880962
 CircleCollider2D:
   m_ObjectHideFlags: 1
@@ -101,9 +101,9 @@ CircleCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: .0199999996, y: 0}
   serializedVersion: 2
-  m_Radius: 2.0999999
+  m_Radius: .0549999997
 --- !u!114 &11472394
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -165,7 +165,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5e3bd06eddca3634785736bfa1debbf3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 82faffd226066a14ab622697ef288ba3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:

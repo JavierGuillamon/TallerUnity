@@ -23,12 +23,10 @@ public class MovEnemy : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-       
-
         if(!mov)       
             StartCoroutine(Move(1f));
-       
     }
+
     IEnumerator Move(float x)
     {
         mov = true;

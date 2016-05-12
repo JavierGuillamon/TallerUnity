@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class PlayerControl : MonoBehaviour {
@@ -20,6 +21,12 @@ public class PlayerControl : MonoBehaviour {
     public float tiempoAnimDaño=0.5f;
 
     public Canvas canvasMenu;
+
+    public AudioSource audioWalk;
+    public AudioSource audioDamage;
+
+    public Image fadeImg;
+
     void Start()
     {
         canvasMenu.enabled = false;
@@ -46,6 +53,7 @@ public class PlayerControl : MonoBehaviour {
         {
             if (isWalking)
             {
+                if (audioWalk.isPlaying == false) { audioWalk.Play(); }
                 anim.SetFloat("x", mouse_X - player_X);
                 anim.SetFloat("y", mouse_Y - player_Y);
             }
@@ -75,18 +83,20 @@ public class PlayerControl : MonoBehaviour {
     }
     public void ShieldOn(float x, float y)
     {
-        canMove = false;
+        //canMove = false;
         anim.SetFloat("x", x);
         anim.SetFloat("y", y);
         anim.SetBool("Shield", true);
     }
     public void ShieldOff()
     {
-        canMove = true;
+       // canMove = true;
         anim.SetBool("Shield", false);
     }
     public void recibirDaño()
-    {  
+    {
+        if(vidas!=0) audioDamage.Play();
+        anim.SetBool("isWalking", false);
         anim.SetBool("damage", true);
         vidas -= 1;
         vidasImg[(vidas)].SetActive(false);
@@ -94,6 +104,7 @@ public class PlayerControl : MonoBehaviour {
         {
             anim.SetBool("dead", true);
             canMove = false;
+            StartCoroutine(Fade());
         }
         StartCoroutine(Wait(tiempoAnimDaño));
     }
@@ -116,5 +127,18 @@ public class PlayerControl : MonoBehaviour {
     {
         canvasMenu.enabled = false;
         Time.timeScale = 1;
+    }
+    IEnumerator Fade()
+    {
+        while (fadeImg.color.a < 1)
+        {
+            Color aux =fadeImg.color;
+            aux.a = aux.a + 0.01f;
+            Debug.Log("ALPHA::" + aux.a);
+            fadeImg.color = aux;
+            yield return new WaitForSeconds(0.01f);
+        }
+        Application.LoadLevel(0);
+        
     }
 }
