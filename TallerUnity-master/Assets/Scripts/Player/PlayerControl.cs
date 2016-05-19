@@ -134,7 +134,6 @@ public class PlayerControl : MonoBehaviour {
         {
             Color aux =fadeImg.color;
             aux.a = aux.a + 0.01f;
-            Debug.Log("ALPHA::" + aux.a);
             fadeImg.color = aux;
             yield return new WaitForSeconds(0.01f);
         }

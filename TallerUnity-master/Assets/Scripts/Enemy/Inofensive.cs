@@ -11,6 +11,8 @@ public class Inofensive : MonoBehaviour {
 
     public GameObject sensorEntrada;
 
+    public int inofensive;
+
     private AudioSource audioSource;
     void Start()
     {
@@ -20,19 +22,26 @@ public class Inofensive : MonoBehaviour {
     {
         if (other.tag == "Bala")
         {
+            if (inofensive == 1)  StartCoroutine(recibirDaño(tiempoAnimDaño));
             audioSource.Play();
-            StartCoroutine(recibirDaño(tiempoAnimDaño));
+
             if (Lives != 1)
+            {
                 Lives--;
+            }
             else
-                StartCoroutine(morir(tiempoAnimDaño));                
+            {
+                Debug.Log("MUERO");
+                StartCoroutine(morir(tiempoAnimDaño));
+            }
         }
     }
     void OnTriggerExit2D(Collider2D other)
     {
         if (other.tag == "Bala")
         {
-            StartCoroutine(recibirDaño(tiempoAnimDaño));
+            audioSource.Play();
+            if (inofensive == 1) StartCoroutine(recibirDaño(tiempoAnimDaño));
             if (Lives != 1)
                 Lives--;
             else
@@ -48,9 +57,14 @@ public class Inofensive : MonoBehaviour {
     }
     IEnumerator morir(float x)
     {
+        Debug.Log("1");
         sensorEntrada.GetComponent<Spawn>().deadCount++;
-        anim.SetBool("dead", true);
+        Debug.Log("2");
+        if (inofensive == 1) anim.SetBool("dead", true);
+        Debug.Log("3");
         yield return new WaitForSeconds(x);
+        Debug.Log("4");
         Destroy(go);
+        Debug.Log("5");
     }
 }

@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 16e0733f9efc890419eccd72d0fc0753
-timeCreated: 1461946764
+timeCreated: 1463668808
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -60,42 +60,42 @@ TextureImporter:
     - name: enemysecondmelee_dash_0
       rect:
         serializedVersion: 2
-        x: 24
+        x: 23
         y: 35
-        width: 24
-        height: 31
+        width: 33
+        height: 33
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemysecondmelee_dash_1
       rect:
         serializedVersion: 2
         x: 56
         y: 35
-        width: 26
+        width: 35
         height: 33
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemysecondmelee_dash_2
       rect:
         serializedVersion: 2
         x: 94
         y: 35
-        width: 27
-        height: 30
+        width: 35
+        height: 33
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemysecondmelee_dash_3
       rect:
         serializedVersion: 2
         x: 130
         y: 35
-        width: 31
-        height: 28
+        width: 35
+        height: 33
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemysecondmelee_dash_4
       rect:
@@ -103,29 +103,29 @@ TextureImporter:
         x: 166
         y: 35
         width: 35
-        height: 23
+        height: 33
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemysecondmelee_dash_5
       rect:
         serializedVersion: 2
         x: 203
         y: 35
-        width: 30
-        height: 30
+        width: 35
+        height: 33
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemysecondmelee_dash_6
       rect:
         serializedVersion: 2
         x: 238
         y: 35
-        width: 24
-        height: 31
+        width: 35
+        height: 33
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

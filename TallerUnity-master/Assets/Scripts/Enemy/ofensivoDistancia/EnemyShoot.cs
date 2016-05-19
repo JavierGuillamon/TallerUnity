@@ -4,9 +4,10 @@ using System.Collections;
 public class EnemyShoot : MonoBehaviour {
     public GameObject bulletGO;
     public Vector2 direction;
-
+    public Animation anim;
     private float nextActionTime = 0.0f;
     public float period = 1f;
+    int AS = 1;
     // Use this for initialization
     void Start ()
     {

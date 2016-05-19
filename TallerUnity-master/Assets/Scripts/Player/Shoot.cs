@@ -13,6 +13,8 @@ public class Shoot : MonoBehaviour
     private Animator anim;
     public float CdInSeconds = 1f;
     public float velocidadBala;
+    public AudioSource audioAtck1;
+    public AudioSource audioAtck2;
     // Use this for initialization
     void Start()
     {
@@ -95,11 +97,7 @@ public class Shoot : MonoBehaviour
         yield return new WaitForSeconds(x);
         GameObject bala = (GameObject)Instantiate(BalaGo, Spawn.position, Quaternion.identity);
         Transform child = bala.transform.Find("BalaSprite");
-        /*DESCOMENTAR CUANDO TENGAMOS SPRITES FINALES
-        
-        anim = child.GetComponent<Animator>();
-        anim.SetFloat("x", Xaux);
-        anim.SetFloat("y", Yaux);*/
+        audioAtck1.Play();
 
         yield return new WaitForSeconds(y);
         pm.ShieldOff();
@@ -109,7 +107,8 @@ public class Shoot : MonoBehaviour
         yield return new WaitForSeconds(x);
         GameObject fuerza = (GameObject)Instantiate(FuerzaGo, Spawn.position, Quaternion.identity);
         Transform child = fuerza.transform.Find("FuerzaSprite");
-        
+        audioAtck2.Play();
+
         anim = child.GetComponent<Animator>();
         anim.SetFloat("x", Xaux);
         anim.SetFloat("y", Yaux);

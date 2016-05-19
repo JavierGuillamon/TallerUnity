@@ -115,7 +115,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 49c5c5c1b49d01745b78823b9f2bb338, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 06c227ef4b7ab8645a551adab15cf4f7, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -223,6 +223,7 @@ MonoBehaviour:
   "tiempoAnimDa\xF1o": .5
   tiempoAnimMorir: .200000003
   sensorEntrada: {fileID: 0}
+  inofensive: 1
 --- !u!114 &11467516
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -297,6 +298,14 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 06c227ef4b7ab8645a551adab15cf4f7, type: 3}
+    - target: {fileID: 0}
+      propertyPath: inofensive
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

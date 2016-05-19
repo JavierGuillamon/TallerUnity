@@ -9,12 +9,12 @@ GameObject:
   m_Component:
   - 4: {fileID: 410624}
   - 212: {fileID: 21202604}
-  - 95: {fileID: 9528164}
   - 50: {fileID: 5089144}
   - 58: {fileID: 5898056}
   - 114: {fileID: 11430958}
   - 114: {fileID: 11411176}
   - 114: {fileID: 11414166}
+  - 95: {fileID: 9576740}
   m_Layer: 10
   m_Name: MelePruebas
   m_TagString: Untagged
@@ -32,6 +32,7 @@ GameObject:
   - 4: {fileID: 451398}
   - 58: {fileID: 5824148}
   - 114: {fileID: 11484878}
+  - 82: {fileID: 8222668}
   m_Layer: 17
   m_Name: EnemyPlayerDetect
   m_TagString: Untagged
@@ -46,7 +47,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 129862}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .065984726, y: 2.90929699, z: 0}
+  m_LocalPosition: {x: 8.8417511, y: 3.57603621, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 451398}
@@ -106,16 +107,86 @@ CircleCollider2D:
   m_Offset: {x: 0, y: -.0500000007}
   serializedVersion: 2
   m_Radius: .0900000036
---- !u!95 &9528164
+--- !u!82 &8222668
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 150126}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 06c227ef4b7ab8645a551adab15cf4f7, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!95 &9576740
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 129862}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 9da9c179d1ab8d446ad2b168592cdf44, type: 2}
+  m_Controller: {fileID: 9100000, guid: e935a258f7e4ae0438399e285504bb16, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -136,7 +207,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   tr: {fileID: 410624}
-  anim: {fileID: 0}
+  anim: {fileID: 9576740}
   body: {fileID: 5089144}
   speed: 1
   scaleRangeMin: .800000012
@@ -177,12 +248,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c123106985ff13b4aa0d59c168970652, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Lives: 2
-  anim: {fileID: 9528164}
+  Lives: 3
+  anim: {fileID: 9576740}
   go: {fileID: 129862}
   "tiempoAnimDa\xF1o": .5
   tiempoAnimMorir: .200000003
   sensorEntrada: {fileID: 0}
+  inofensive: 0
 --- !u!212 &21202604
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -237,6 +309,26 @@ Prefab:
       value: 
       objectReference: {fileID: 21300000, guid: b0033ffde48298a47840580c61c47d4c,
         type: 3}
+    - target: {fileID: 0}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: e935a258f7e4ae0438399e285504bb16, type: 2}
+    - target: {fileID: 0}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: go
+      value: 
+      objectReference: {fileID: 129862}
+    - target: {fileID: 0}
+      propertyPath: Lives
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 129862}

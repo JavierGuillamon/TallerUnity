@@ -14,8 +14,11 @@ public class Spawn : MonoBehaviour {
     public EntrarSala es;
     public int cantidadWave1;
     public int cantidadWave2;
-	// Update is called once per frame
-	void Update () {
+    public int cantidadWave3;
+    public int cantidadWave41;
+    public int cantidadWave42;
+    // Update is called once per frame
+    void Update () {
         WaveControl();
         endwave();
     }
@@ -23,7 +26,6 @@ public class Spawn : MonoBehaviour {
     {
         if (deadCount == cantidadWave1 && spawn)
         {
-            Debug.Log("WAVE FINALIZADA");
             deadCount = 0;
             spawn = false;
             wave++;
@@ -44,20 +46,23 @@ public class Spawn : MonoBehaviour {
             switch (wave)
             {
                 case 0:
-                    Debug.Log("WAVE 1");
                     spawnEnemy(enmyInofensivo, cantidadWave1,false);
                     
                     break;
                 case 1:
-                    Debug.Log("WAVE 2");
                     spawnEnemy(enmyOfMelee, cantidadWave2,true);
                     break;
                 case 2:
-
-                    es.ApagarSala();
+                    spawnEnemy(enmyOfDistancia, cantidadWave3, true);
                     break;
                 case 3:
+                    spawnEnemy(enmyOfMelee, cantidadWave41, true);
+                    spawnEnemy(enmyOfDistancia, cantidadWave42, true);
                     break;
+                case 4:
+                    es.ApagarSala();
+                    break;
+
             }
         }
     }
